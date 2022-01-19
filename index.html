@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSday3</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body id="body">
+
+    <!-- classList Aufgabe 1_1 / 2_1-->
+
+    <section>
+        <h1 id="headline">Meine Bucket-List</h1>
+        <ul id="list">
+            <li>mit Haien tauchen</li>
+            <li>auf allen Kontinenten der Erde gewesen sein</li>
+            <li>immer 1€ mehr auf dem Konto haben, als ich brauche</li>
+        </ul>
+        <button onclick="changeHeadline()">Headline stylen</button>
+        <button onclick="resetHeadline()">Reset Headline</button>
+    </section>
+
+    <!-- formsJS Aufgabe 1_1 -->
+
+    <section>
+        <form onsubmit="return false">
+            <input type="number" id="number" placeholder="Put in a Number"></input>
+            <button onclick="calc()"> multiply me </button>
+        </form>
+        <p id="sum"></p>
+    </section>
+
+    <!-- formsJS Aufgabe 1_2 -->
+
+    <section>
+        <form onsubmit="return false">
+            <h1>Gib dein Geburtsjahr ein</h1>
+            <input type="number" id="year" placeholder="year"></input>
+            <button onclick="birth()"> Berechne mein Alter</button>
+        </form>
+        <p id="result"></p>
+    </section>
+
+    <!-- formsJS Aufgabe 1_3 -->
+
+    <section>
+        <form onsubmit="return false">
+            <label for="alter1">Alter 1</label>
+            <input type="number" id="alter1"></input>
+            <br>
+            <label for="alter2">Alter 2</label>
+            <input type="number" id="alter2"></input>
+            <br>
+            <button onclick="comp()"> Berechne!</button>
+        </form>
+        <p id="show"></p>
+    </section>
+
+    <!-- formsJS BONUS Aufgabe 3_1 -->
+
+    <section class="center">
+        <h2>Font Generator</h2>
+        <input
+            type="range"
+            name="fontsize"
+            id="fontSize"
+            min="12"
+            max="72"
+            step="12"
+            onchange="changeFont()"
+        />
+        <label for="">Font-size</label>
+        <select name="" id="fontSelect" onchange="changeFont()">
+            <option value="Bodoni Moda, serif">Bodoni Moda, serif</option>
+            <option value="Open Sans, sans-serif">Open Sans, sans-serif</option>
+            <option value="Roboto, sans-serif">Roboto, sans-serif</option>
+            <option value="Yusei Magic, sans-serif">Yusei Magic, sans-serif</option>
+            <option value="Comic Sans MS, serif">Comic Sans MS, serif</option>
+        </select>
+        <input
+            type="text"
+            name="textInput"
+            id="textInput"
+            placeholder="Hier Text eingeben"
+            onchange="changeFont()"
+        />
+        <h1 id="ausgabe"></h1>
+    </section>
+
+    <!-- formsJS BONUS Aufgabe 3_2 -->
+
+    <section class="center">
+        <label for="red">RED</label>
+        <input 
+            type="range" 
+            name="red" 
+            id="red" 
+            min="0"
+            max="256"
+            onchange="changeBg()"
+        >
+        <label for="GREEN">GREEN</label>
+        <input 
+            type="range" 
+            name="green" 
+            id="green" 
+            min="0"
+            max="256"
+            onchange="changeBg()"
+        >
+        <label for="BLUE">BLUE</label>
+        <input 
+            type="range" 
+            name="blue" 
+            id="blue" 
+            min="0"
+            max="256"
+            onchange="changeBg()"
+        >
+    </section>
+
+
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
