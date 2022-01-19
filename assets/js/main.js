@@ -11,12 +11,12 @@ let headLine = document.getElementById("headline")
 let ulList = document.getElementById("list")
 
 function changeHeadline() {
-    console.log(changeHeadline)
+    console.log("change")
     document.getElementById("headline").classList.add("font", "listing")
 }
 
 function resetHeadline() {
-    console.log("läuft")
+    console.log("reset")
     headLine.classList.remove("font", "listing")
 }
 

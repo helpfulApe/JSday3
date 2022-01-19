@@ -11,10 +11,11 @@ Yusei Magic, sans-serif;
     text-align: center;
 }
 
-/* Classlist LEvel 1_1 + 1_2 */
 section{
     margin-bottom: 100px;
 }
+
+/* Classlist LEvel 1_1 + 1_2 */
 #headline {
     text-decoration: underline;
     text-align: center;
